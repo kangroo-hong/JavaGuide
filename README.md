@@ -1,6 +1,6 @@
 点击关注[公众号](#公众号)及时获取笔主最新更新文章，并可免费领取本文档配套的《Java面试突击》以及Java工程师必备学习资源。
 
-**[安利一下阿里云双 12 的活动，1 核 2g 只要 89 一年，薅波羊毛，感觉甚爽，不过最低的优惠都是新人才能享有的，我是用我女朋友的账号买的，没有女朋友的，emm.....，可以考虑一下亲人的。](https://www.aliyun.com/minisite/goods?userCode=hf47liqn&share_source=copy_link)**
+少部分原创文章更新在了知识星球，关于我为什么要弄知识星球，请看这里：**[犹豫了很久，还是做了一个很久没敢做的事情](https://javaguide.cn/2019/01/02/chat/%E5%81%9A%E4%BA%86%E4%B8%80%E4%B8%AA%E5%BE%88%E4%B9%85%E6%B2%A1%E6%95%A2%E5%81%9A%E7%9A%84%E4%BA%8B%E6%83%85/)** ，优惠卷地址：[https://t.zsxq.com/iIqZBUR](https://t.zsxq.com/iIqZBUR) 。
 
 <p align="center">
 <a href="https://github.com/Snailclimb/JavaGuide" target="_blank">
@@ -50,7 +50,7 @@
     - [Redis](#redis)
     - [数据库扩展](#数据库扩展)
 - [系统设计](#系统设计)
-    - [常用框架(Spring/SpringBoot、Zookeeper ... )](#常用框架)
+    - [常用框架(Spring,SpringBoot)](#常用框架)
     - [数据通信/中间件(消息队列、RPC ... )](#数据通信中间件)
     - [权限认证](#权限认证)
     - [分布式 & 微服务](#分布式--微服务)
@@ -58,7 +58,7 @@
       - [配置中心](#配置中心)
       - [唯一 id 生成](#唯一-id-生成)
       - [服务治理：服务注册与发现、服务路由控制](#服务治理服务注册与发现服务路由控制)
-    - [架构](#架构)
+    - [大型网站架构](#大型网站架构)
     - [设计模式(工厂模式、单例模式 ... )](#设计模式)
 - [面试指南](#面试指南)
     - [备战面试](#备战面试)
@@ -175,25 +175,23 @@
 
 ### 数据库扩展
 
-代办......
+待办......
 
 ## 系统设计
 
 ### 常用框架
 
-#### Spring/SpringBoot
+#### Spring
 
 - [Spring 学习与面试](docs/system-design/framework/spring/Spring.md)
 - **[Spring 常见问题总结](docs/system-design/framework/spring/SpringInterviewQuestions.md)**
-- **[SpringBoot 指南/常见面试题总结](https://github.com/Snailclimb/springboot-guide)**
-- [Spring中bean的作用域与生命周期](docs/system-design/framework/spring/SpringBean.md)
+- [Spring中 Bean 的作用域与生命周期](docs/system-design/framework/spring/SpringBean.md)
 - [SpringMVC 工作原理详解](docs/system-design/framework/spring/SpringMVC-Principle.md)
 - [Spring中都用到了那些设计模式?](docs/system-design/framework/spring/Spring-Design-Patterns.md)
 
-#### ZooKeeper
+#### SpringBoot
 
-- [ZooKeeper 相关概念总结](docs/system-design/framework/ZooKeeper.md)
-- [ZooKeeper 数据模型和常见命令](docs/system-design/framework/ZooKeeper数据模型和常见命令.md)
+- **[SpringBoot 指南/常见面试题总结](https://github.com/Snailclimb/springboot-guide)**
 
 ### 数据通信/中间件
 
@@ -208,6 +206,7 @@
 
 - [消息队列总结](docs/system-design/data-communication/message-queue.md)
 - [RabbitMQ 入门](docs/system-design/data-communication/rabbitmq.md)
+- [RocketMQ 入门](docs/system-design/data-communication/RocketMQ.md)
 - [RocketMQ的几个简单问题与答案](docs/system-design/data-communication/RocketMQ-Questions.md)
 - [Kafka入门看这一篇就够了](docs/system-design/data-communication/Kafka入门看这一篇就够了.md)
 - [Kafka系统设计开篇-面试看这篇就够了](docs/system-design/data-communication/Kafka系统设计开篇-面试看这篇就够了.md)
@@ -230,20 +229,34 @@
 
 #### 配置中心
 
-代办......
+待办......
 
 #### 唯一 id 生成
 
- [分布式id生成方案总结](docs/system-design/micro-service/分布式id生成方案总结.md)
+-  [分布式id生成方案总结](docs/system-design/micro-service/分布式id生成方案总结.md)
 
 #### 服务治理：服务注册与发现、服务路由控制
 
-代办......
+**ZooKeeper:**
 
-### 架构
+> 前两篇文章可能有内容重合部分，推荐都看一遍。
+
+- [【入门】ZooKeeper 相关概念总结](docs/system-design/framework/ZooKeeper.md)
+- [【进阶】Zookeeper 原理简单入门！](docs/system-design/framework/ZooKeeper-plus.md)
+- [【拓展】ZooKeeper 数据模型和常见命令](docs/system-design/framework/ZooKeeper数据模型和常见命令.md)
+
+### 大型网站架构
 
 - [8 张图读懂大型网站技术架构](docs/system-design/website-architecture/8%20张图读懂大型网站技术架构.md)
 - [【面试精选】关于大型网站系统架构你不得不懂的10个问题](docs/system-design/website-architecture/关于大型网站系统架构你不得不懂的10个问题.md)
+
+#### 性能测试
+
+- [后端程序员也要懂的性能测试知识](https://articles.zsxq.com/id_lwl39teglv3d.html) （知识星球）
+
+#### 高并发
+
+#### 高可用
 
 ### 设计模式
 
@@ -306,6 +319,7 @@
 ### Github
 
 - [Github 上 Star 数最多的 10 个项目，看完之后很意外!](docs/tools/github/github-star-ranking.md)
+- [年末将至，值得你关注的16个Java 开源项目！](docs/github-trending/2019-12.md)
 - [Java 项目月榜单](docs/github-trending/JavaGithubTrending.md)
 
 ***
